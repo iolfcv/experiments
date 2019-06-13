@@ -1,7 +1,7 @@
 from model import IncrNet
 import torch
 from torch.autograd import Variable
-from dataset import iDataset
+from dataset_incr_crib import iDataset
 import argparse
 import time
 import numpy as np
