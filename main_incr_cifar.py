@@ -269,9 +269,10 @@ if args.resume:
     test_counter = mp.Value("i", num_iters_done)
 
     # expanding test set to everything seen earlier
-    for mdl_cl, gt_cl in zip(model_classes_seen, classes_seen):
-        print("Expanding class for resuming : %d, %d" %(mdl_cl, gt_cl))
-        test_set.expand([mdl_cl], [gt_cl])
+    for i, (mdl_cl, gt_cl) in enumerate(zip(model_classes_seen, classes_seen)):
+        if mdl_cl not in model_classes_seen[:i]:
+            print("Expanding class for resuming : %d, %d" %(mdl_cl, gt_cl))
+            test_set.expand([mdl_cl], [gt_cl])
 
     # Ensuring requires_grad = True after model reload
     for p in model.parameters():
