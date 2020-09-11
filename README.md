@@ -1,6 +1,7 @@
 # Incremental Object Learning from Contiguous Views
 This is the code for our CVPR 2019 paper [Incremental Object Learning from Contiguous Views](http://openaccess.thecvf.com/content_CVPR_2019/html/Stojanov_Incremental_Object_Learning_From_Contiguous_Views_CVPR_2019_paper.html)
 
+The code generate data using CRIB can be found at the [CRIB Data Generator](https://github.com/iolfcv/CRIB_Data_Generator) repository
 
 ### Requirements
 - Python 3.5+ 
