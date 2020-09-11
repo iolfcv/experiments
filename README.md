@@ -24,7 +24,7 @@ The code generate data using CRIB can be found at the [CRIB Data Generator](http
 
 ### Running Incremental Learning Models
 
-This is a stripped down version of the code and does not include the entire CRIB (Continual Recognition Inspired by Babies) data generator. For running experiments using this code, please download CRIB-Toys data from the following [link](link) 
+This is a stripped down version of the code and does not include the entire CRIB (Continual Recognition Inspired by Babies) data generator. For running experiments using this code, please download CRIB-Toys data from the following [link](https://iolfcv.github.io/downloads/index.html) 
 
 The main program has a separate train and test process. Both can run simultaneously using 1 GPU provided that batch_size + test_batch_size images can fit on GPU memory. By default, the train and test processes use the first and second GPU devices visible, unless the '--one_gpu' flag is used, in which case both use the first device visible. 
 
